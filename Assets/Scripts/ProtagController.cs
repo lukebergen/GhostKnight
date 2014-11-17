@@ -22,6 +22,11 @@ public class ProtagController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		Physics2D.IgnoreLayerCollision( LayerMask.NameToLayer("Player"), 
+		                               LayerMask.NameToLayer("Ground"), 
+		                               rigidbody2D.velocity.y > 0
+		                               );
+
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 
 		anim.SetBool ("Grounded", grounded);
@@ -38,7 +43,7 @@ public class ProtagController : MonoBehaviour {
 	}
 
 	void Update() {
-		if (grounded && Input.GetAxis ("Vertical") > 0) {
+		if (grounded && Input.GetAxis ("Jump") > 0) {
 			grounded = false;
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
