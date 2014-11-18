@@ -9,14 +9,15 @@ public class ProtagController : MonoBehaviour {
 	private Animator anim;
 
 	public bool grounded = false;
-	public Transform groundCheck;
-	public float groundRadius = 0.01f;
+	public float groundRadius = 0.08f;
 	public bool almostGrounded = false;
 	public Transform almostGroundedCheck;
 	public float almostGroundedRadius = 0.16f;
+	public Transform groundCheckTopLeft;
+	public Transform groundCheckBottomRight;
 	public LayerMask whatIsGround;
 
-	public float jumpForce = 700.0f;
+	public float jumpForce = 150.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -25,12 +26,14 @@ public class ProtagController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		/*
 		Physics2D.IgnoreLayerCollision( LayerMask.NameToLayer("Player"), 
 		                               LayerMask.NameToLayer("Ground"), 
-		                               rigidbody2D.velocity.y > 0
+		                               rigidbody2D.velocity.y > 0 && !grounded
 		                               );
+		*/
 
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		grounded = Physics2D.OverlapArea (groundCheckTopLeft.position, groundCheckBottomRight.position,  whatIsGround);
 		almostGrounded = Physics2D.OverlapCircle (almostGroundedCheck.position, almostGroundedRadius, whatIsGround);
 
 		anim.SetBool ("Grounded", grounded);
@@ -45,13 +48,18 @@ public class ProtagController : MonoBehaviour {
 		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) {
 			Flip ();
 		}
+
 	}
 
+
+
 	void Update() {
+		// Jump
 		if (grounded && Input.GetButtonDown ("Jump")) { 			//I like "GetButtonDown over GetAxis because holding the button doesn't yield repeaded jumping 
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 			grounded = false;
 		}
+
 	}
 	
 	void Flip() {
