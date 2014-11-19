@@ -9,7 +9,6 @@ public class ProtagController : MonoBehaviour {
 	private Animator anim;
 
 	public bool grounded = false;
-	public float groundRadius = 0.08f;
 	public bool almostGrounded = false;
 	public Transform almostGroundedCheck;
 	public float almostGroundedRadius = 0.16f;
@@ -33,28 +32,29 @@ public class ProtagController : MonoBehaviour {
 		                               );
 		*/
 
-		grounded = Physics2D.OverlapArea (groundCheckTopLeft.position, groundCheckBottomRight.position,  whatIsGround);
-		almostGrounded = Physics2D.OverlapCircle (almostGroundedCheck.position, almostGroundedRadius, whatIsGround);
-
-		anim.SetBool ("Grounded", grounded);
-		anim.SetBool ("AlmostGrounded", almostGrounded);
-
-		float move = Input.GetAxis ("Horizontal");
-
-		anim.SetFloat ("Speed", Mathf.Abs (move));
-
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-
-		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) {
-			Flip ();
-		}
-
 	}
 
 
 
 	void Update() {
 		// Jump
+		grounded = Physics2D.OverlapArea (groundCheckTopLeft.position, groundCheckBottomRight.position,  whatIsGround);
+		almostGrounded = Physics2D.OverlapCircle (almostGroundedCheck.position, almostGroundedRadius, whatIsGround);
+		
+		anim.SetBool ("Grounded", grounded);
+		anim.SetBool ("AlmostGrounded", almostGrounded);
+		
+		float move = Input.GetAxis ("Horizontal");
+		
+		anim.SetFloat ("Speed", Mathf.Abs (move));
+		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+		
+		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) {
+			Flip ();
+		}
+
 		if (grounded && Input.GetButtonDown ("Jump")) { 			//I like "GetButtonDown over GetAxis because holding the button doesn't yield repeaded jumping 
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 			grounded = false;
