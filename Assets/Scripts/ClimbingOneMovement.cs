@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-private Animator animator;
-public bool updatePosition;
-public bool playMovementAnim;
-public bool move;
-public bool readyToMove = false;
-
 public class ClimbingOneMovement : MonoBehaviour {
+
+	private Animator animator;
+	public bool updatePosition;
+	public bool playMovementAnim;
+	public bool move;
+	public bool readyToMove = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +24,7 @@ public class ClimbingOneMovement : MonoBehaviour {
 		 * • Update "readyToMove" so if the AI calls for future movement, it can occur.
 		 * */
 
+		/*
 		AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 		if(move && stateInfo.nameHash == Animator.StringToHash("ClimbingOneClimbing")) {
 			readyToMove = false;
@@ -30,4 +32,6 @@ public class ClimbingOneMovement : MonoBehaviour {
 		if(move && stateInfo.nameHash == !Animator.StringToHash("ClimbingOneClimbing")) {
 			readyToMove = true;
 		}
+		*/
+	}
 }

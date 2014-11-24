@@ -13,6 +13,12 @@ TextureImporter:
     21300016: sprite-sheet_8
     21300018: sprite-sheet_9
     21300020: sprite-sheet_10
+    21300022: sprite-sheet_11
+    21300024: sprite-sheet_12
+    21300026: sprite-sheet_13
+    21300028: sprite-sheet_14
+    21300030: sprite-sheet_15
+    21300032: sprite-sheet_16
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,109 +64,169 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 40
-        height: 40
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 40
-        width: 40
-        height: 40
+        x: 38
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 40
-        width: 40
-        height: 40
+        x: 76
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_3
       rect:
         serializedVersion: 2
-        x: 120
-        y: 40
-        width: 40
-        height: 40
+        x: 114
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_4
       rect:
         serializedVersion: 2
-        x: 160
-        y: 40
-        width: 40
-        height: 40
+        x: 152
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 40
-        height: 40
+        x: 190
+        y: 76
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_6
       rect:
         serializedVersion: 2
-        x: 40
-        y: 0
-        width: 40
-        height: 40
+        x: 0
+        y: 38
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_7
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 40
-        height: 40
+        x: 38
+        y: 38
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_8
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
-        width: 40
-        height: 40
+        x: 76
+        y: 38
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_9
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 40
-        height: 40
+        x: 114
+        y: 38
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite-sheet_10
       rect:
         serializedVersion: 2
-        x: 200
+        x: 190
+        y: 38
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 40
-        height: 40
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
