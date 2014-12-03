@@ -4,7 +4,8 @@ using System.Collections;
 public class ProtagController : MonoBehaviour {
 
 	public float maxSpeed = 5.0f;
-	private bool facingRight = false;
+
+	public int direction = -1;
 
 	private Animator anim;
 
@@ -51,7 +52,7 @@ public class ProtagController : MonoBehaviour {
 		
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 		
-		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) {
+		if ((move > 0 && direction < 0) || (move < 0 && direction > 0)) {
 			Flip ();
 		}
 
@@ -63,7 +64,7 @@ public class ProtagController : MonoBehaviour {
 	}
 	
 	void Flip() {
-		facingRight = !facingRight;
+		direction *= -1;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;

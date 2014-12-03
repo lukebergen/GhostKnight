@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-private Animator animator;
-public bool updatePosition;
-public bool playMovementAnim;
-public bool move;
-public bool readyToMove = false;
-
 public class ClimbingOneMovement : MonoBehaviour {
+
+	private Animator animator;
+	public bool updatePosition;
+	public bool playMovementAnim;
+	public bool move;
+	public bool readyToMove = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,8 +26,9 @@ public class ClimbingOneMovement : MonoBehaviour {
 		AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 		if(move && stateInfo.nameHash == Animator.StringToHash("ClimbingOneClimbing")) {
 			readyToMove = false;
-			}
-		if(move && stateInfo.nameHash == !Animator.StringToHash("ClimbingOneClimbing")) {
+		}
+		if(move && stateInfo.nameHash != Animator.StringToHash("ClimbingOneClimbing")) {
 			readyToMove = true;
 		}
+	}
 }
