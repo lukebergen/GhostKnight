@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 41ea844b0faf446c3a223337722f8369
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: elk-walk1
+    21300002: elk-walk2
+    21300004: elk-walk3
+    21300006: elk-jump1
+    21300008: elk-jump2
+    21300010: elk-fly1
+    21300012: elk-fly2
+    21300014: elk-fly3
+    21300016: elk-fly4
+    21300018: elk-fly5
+    21300020: elk-fly6
+    21300022: elk-damage
+    21300024: elk-landing1
+    21300026: elk-landing2
+    21300028: elk-yell1
+    21300030: elk-yell2
+    21300032: elk-dead1
+    21300034: elk-dead2
+    21300036: elk-ground-attack1
+    21300038: elk-ground-attack2
+    21300040: elk-ground-attack3
+    21300042: elk-jump-attack1
+    21300044: elk-jump-attack2
+    21300046: elk-jump-attack3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -21,17 +45,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +66,246 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: elk-walk1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-walk2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-walk3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-jump1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-jump2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly1
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 192
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-fly6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-damage
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 128
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-landing1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-landing2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-yell1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-yell2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-dead1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-dead2
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 64
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-ground-attack1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-ground-attack2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-ground-attack3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-jump-attack1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-jump-attack2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elk-jump-attack3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
