@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 27df63c606861408e8a29bc81df8df8e
+guid: a6704458df19547e4b18f9af90bd51f8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: climbing-one-sprite-sheet_0
-    21300002: climbing-one-sprite-sheet_1
-    21300004: climbing-one-sprite-sheet_2
-    21300006: climbing-one-sprite-sheet_3
-    21300008: climbing-one-sprite-sheet_4
+    21300000: lightbugs-sprite-sheet_0
+    21300002: lightbugs-sprite-sheet_1
+    21300004: lightbugs-sprite-sheet_2
+    21300006: lightbugs-sprite-sheet_3
+    21300008: lightbugs-sprite-sheet_4
+    21300010: lightbugs-sprite-sheet_5
+    21300012: lightbugs-sprite-sheet_6
+    21300014: lightbugs-sprite-sheet_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,53 +51,83 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: climbing-one-sprite-sheet_0
+    - name: lightbugs-sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightbugs-sprite-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightbugs-sprite-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightbugs-sprite-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightbugs-sprite-sheet_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 91
-        height: 157
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: climbing-one-sprite-sheet_1
+    - name: lightbugs-sprite-sheet_5
       rect:
         serializedVersion: 2
-        x: 91
+        x: 24
         y: 0
-        width: 91
-        height: 157
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: climbing-one-sprite-sheet_2
+    - name: lightbugs-sprite-sheet_6
       rect:
         serializedVersion: 2
-        x: 182
+        x: 48
         y: 0
-        width: 91
-        height: 157
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: climbing-one-sprite-sheet_3
+    - name: lightbugs-sprite-sheet_7
       rect:
         serializedVersion: 2
-        x: 273
+        x: 72
         y: 0
-        width: 91
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: climbing-one-sprite-sheet_4
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 0
-        width: 91
-        height: 157
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
