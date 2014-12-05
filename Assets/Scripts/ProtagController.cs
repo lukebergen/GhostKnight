@@ -14,8 +14,8 @@ public class ProtagController : MonoBehaviour {
 	public float jumpVelocity = 2.5f;
 	public float maxSlopeDotProduct = 0.69f;//0.7f is roughly a 45° angle - 0 is horizontal, 1 is vertical
 	public float groundedCheckDistance = 0.015f;
-	
-	private bool facingRight = false;
+	public int direction = -1;
+
 	private Animator anim;
 	private Transform thisTransform;
 	private BoxCollider2D thisBoxCollider2D;
@@ -69,7 +69,7 @@ public class ProtagController : MonoBehaviour {
 		//anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);//Commented out because it doesn't exist in the animation controller and was throwing warnings
 		
 		//Set Facing Direction
-		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) {
+		if ((move > 0 && direction == -1) || (move < 0 && direction == 1)) {
 			Flip ();
 		}
 	}
