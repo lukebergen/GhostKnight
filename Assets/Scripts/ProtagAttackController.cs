@@ -36,26 +36,27 @@ public class ProtagAttackController : MonoBehaviour {
 			Collider2D[] collisions = Physics2D.OverlapAreaAll (p1, p2);
 
 			for (int i = 0 ; i < collisions.Length ; i++) {
-				InteractionsController other = collisions[i].gameObject.GetComponent<InteractionsController>();
-				if (other != null) {
-					if (doAttack) {
-						doAttack = false;
-						other.gameObject.SendMessage("OnCut", gameObject);
-					}
-					if (doCrouchAttack) {
-						doCrouchAttack = false;
-						other.gameObject.SendMessage("OnPet", gameObject);
-					}
+				if (doAttack) {
+					doAttack = false;
+					collisions[i].gameObject.SendMessage("OnCut", gameObject, SendMessageOptions.DontRequireReceiver);
+				}
+				if (doCrouchAttack) {
+					doCrouchAttack = false;
+					collisions[i].gameObject.SendMessage("OnCrouchAttack", gameObject, SendMessageOptions.DontRequireReceiver);
 				}
 			}
 		}
 
 		if (doAttack2) {
-
+			doAttack2 = false;
+			if (this.item != null) {
+				this.item.SendMessage("fire", null, SendMessageOptions.DontRequireReceiver);
+			}
 		}
 	}
 
 	public void pickUp(GameObject item) {
 		this.item = item;
+		this.item.SendMessage ("OnPickedUp", this.gameObject, SendMessageOptions.DontRequireReceiver);
 	}
 }

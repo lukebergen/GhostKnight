@@ -369,7 +369,6 @@ GameObject:
   - 61: {fileID: 1719043622}
   - 50: {fileID: 1719043627}
   - 114: {fileID: 1719043626}
-  - 114: {fileID: 1719043625}
   m_Layer: 0
   m_Name: ballast-left
   m_TagString: Untagged
@@ -422,18 +421,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &1719043625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1719043621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14ab1966314c48128e5e565721f433b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myInteractionTypes: 00000000
 --- !u!114 &1719043626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +545,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jumpVelocity: 2.5
-  maxSlopeDotProduct: .689999998
+  maxSlopeDotProduct: .709999979
   groundedCheckDistance: .0149999997
   direction: -1
 --- !u!50 &1829374508
