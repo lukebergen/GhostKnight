@@ -16,7 +16,7 @@ public class ProtagAttackController : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetButtonDown ("Fire1")) {
-			if (Input.GetAxis("Vertical") < 0) {
+			if (Input.GetButtonDown("Down")) {
 				doCrouchAttack = true;
 			} else {
 				doAttack = true;

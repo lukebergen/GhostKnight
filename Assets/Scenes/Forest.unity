@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7338331a9376242e6a1df4195959dc98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneWay: 0
+  passThrough: 0
 --- !u!4 &204468481
 Transform:
   m_ObjectHideFlags: 0
@@ -5759,6 +5759,7 @@ MonoBehaviour:
   jumpVelocity: 2.5
   maxSlopeDotProduct: .709999979
   groundedCheckDistance: .0149999997
+  direction: -1
 --- !u!50 &1722036314
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6451,7 +6452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7338331a9376242e6a1df4195959dc98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneWay: 0
+  passThrough: 0
 --- !u!4 &1998970215
 Transform:
   m_ObjectHideFlags: 0
