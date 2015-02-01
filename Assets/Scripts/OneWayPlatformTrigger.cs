@@ -10,7 +10,7 @@ public class OneWayPlatformTrigger : MonoBehaviour {
 	private Rigidbody2D playerBody;
 	
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		platform = transform.parent.gameObject.GetComponent<EdgeCollider2D>();
 		if (platform == null) { platform = transform.parent.gameObject.GetComponent<BoxCollider2D>(); }
 		if (platform == null) { platform = transform.parent.gameObject.GetComponent<PolygonCollider2D>(); }

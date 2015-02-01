@@ -54,21 +54,19 @@ public class ProtagController : MonoBehaviour {
 			}
 			else
 			{
-				targetVelocity.y = 0;
-				targetVelocity -= groundCastHit[0].normal;
+				if (targetVelocity.y < 0.0f) {
+					targetVelocity.y = 0;
+					targetVelocity -= groundCastHit[0].normal;
+				}
 				GameObject groundObject = groundCastHit[0].collider.gameObject;
 
-				if (Input.GetButton("Crouch")) {
+				if (Input.GetButtonDown("Crouch")) {
 					OneWayPlatformTrigger owpt = groundObject.GetComponentInChildren<OneWayPlatformTrigger>();
 					if (owpt) {
 						owpt.manuallyPassThrough = true;
 					}
 				}
 
-				Rigidbody2D groundBody = groundObject.GetComponent<Rigidbody2D>();
-				if (groundBody != null) {
-					targetVelocity += groundBody.velocity;
-				}
 				rigidbody2D.MovePosition(rigidbody2D.position + targetVelocity * Time.fixedDeltaTime);
 			}
 		}
