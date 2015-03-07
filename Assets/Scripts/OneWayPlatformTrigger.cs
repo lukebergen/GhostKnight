@@ -24,7 +24,7 @@ public class OneWayPlatformTrigger : MonoBehaviour {
 	{
 		platform.enabled = !passThrough && playerBody.velocity.y < 0.0f && !manuallyPassThrough;
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		passThrough = true;

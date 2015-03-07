@@ -15,6 +15,7 @@ public class ProtagController : MonoBehaviour {
 	public float maxSlopeDotProduct = 0.69f;//0.7f is roughly a 45° angle - 0 is horizontal, 1 is vertical
 	public float groundedCheckDistance = 0.015f;
 	public int direction = -1;
+	public bool inputEnabled = true;
 
 	private Animator anim;
 	private Transform thisTransform;
@@ -39,14 +40,19 @@ public class ProtagController : MonoBehaviour {
 		almostGrounded = Physics2D.OverlapCircle (almostGroundedCheck.position, almostGroundedRadius, whatIsGround);
 
 		//Horizontal Input
-		float move = Input.GetAxis ("Horizontal");
+		float move;
+		if (inputEnabled) {
+			move = Input.GetAxis ("Horizontal");
+		} else {
+			move = 0.0f;
+		}
 
 		//Set Velocity based on Inputs
 		targetVelocity = rigidbody2D.velocity;
 		targetVelocity.x = move * maxSpeed;
 		
 		if (grounded) {
-			if (Input.GetButtonDown ("Jump")) //I like "GetButtonDown over GetAxis because holding the button doesn't yield repeaded jumping - as you should =-)
+			if (Input.GetButtonDown ("Jump") && inputEnabled) //I like "GetButtonDown over GetAxis because holding the button doesn't yield repeaded jumping - as you should =-)
 			{
 				targetVelocity.y = jumpVelocity;//Use velocity for jumps instead of force - yields more consistent jump heights
 				grounded = false;
@@ -60,7 +66,7 @@ public class ProtagController : MonoBehaviour {
 				}
 				GameObject groundObject = groundCastHit[0].collider.gameObject;
 
-				if (Input.GetButtonDown("Crouch")) {
+				if (Input.GetButtonDown("Crouch") && inputEnabled) {
 					OneWayPlatformTrigger owpt = groundObject.GetComponentInChildren<OneWayPlatformTrigger>();
 					if (owpt) {
 						owpt.manuallyPassThrough = true;

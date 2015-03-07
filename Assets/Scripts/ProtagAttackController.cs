@@ -10,19 +10,22 @@ public class ProtagAttackController : MonoBehaviour {
 	private bool doAttack2 = false;
 	private bool doCrouchAttack = false;
 
+	private ProtagController protagCont; // TODO: Merge protagattackcontroller and protagcontroller. Don't know why I pulled this out to begin with
+
 	// Use this for initialization
 	void Start () {
+		protagCont = gameObject.GetComponent<ProtagController> ();
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Fire1")) {
+		if (Input.GetButtonDown ("Fire1") && protagCont.inputEnabled) {
 			if (Input.GetButtonDown("Down")) {
 				doCrouchAttack = true;
 			} else {
 				doAttack = true;
 			}
 		}
-		if (Input.GetButtonDown ("Fire2")) {
+		if (Input.GetButtonDown ("Fire2") && protagCont.inputEnabled) {
 			doAttack2 = true;
 		}
 	}
